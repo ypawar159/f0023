@@ -23,20 +23,6 @@ def transform_xml_to_json(xml_file_input, json_file_output):
         f2.write(json_text)
 
 
-def process_folder(xml_folder, json_folder):
-    """For each file in xml_folder call transform_xml_to_json and
-    Create JSON file in json_folder"""
-    # TODO: To complete
-    for name in glob.iglob('{}/**/*.xml'.format(xml_folder), recursive=True):
-        print('input file', name)
-        # Change file name extension
-        oname = os.path.splitext(name)[0] + '.json'
-        # Create new file path
-        ofile = os.path.join(json_folder, oname[len(xml_folder) + 1:])
-        print('output file', ofile)
-        transform_xml_to_json(name, ofile)
-
-
 def worker(name):
     print('input file', name)
     # Change file name extension
