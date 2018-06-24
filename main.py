@@ -8,7 +8,7 @@ from multiprocessing import Process
 
 parser = argparse.ArgumentParser(description='Convert XML to JSON')
 parser.add_argument('-i', '--input_xml_folder', help='Path to the XML folder', default='./xml')
-parser.add_argument('-o', '--output_json_folder', help='Path to the XML folder', default='./json')
+parser.add_argument('-o', '--output_json_folder', help='Path to the JSON folder', default='./json')
 parser.add_argument('-max', '--max_threads', default=60)
 args = parser.parse_args()
 
