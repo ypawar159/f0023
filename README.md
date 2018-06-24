@@ -10,6 +10,8 @@ To be specific the requirements are:
  the same structure for the JSON folder. Example of this is presented in <https://github.com/researchgraphsafe/f0023/tree/master/samples>
 * **Requirement 2. Multiprocessing:** This program should process folders using separate threads up to the
 MAX_THREADS identifier as in input parameter.That is running multiple copies of `process_folder`. 
+This program is intended to run on a very large number of XML files (more than millions) that grouped in a nested 
+folder structure. So the performance of this program is very important. 
 
 
 Program `main.py` input arguments are:
