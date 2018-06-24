@@ -28,7 +28,6 @@ def worker(name):
     # Change file name extension
     oname = os.path.splitext(name)[0] + '.json'
     # Create new file path
-    print(os.path.split(name))
     ofile = os.path.join(args.output_json_folder, oname[len(args.input_xml_folder) + 1:])
     print('output file', ofile)
     transform_xml_to_json(name, ofile)
